@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 NTT DOCOMO, INC. All Rights Reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/contents_detail_player_channel_list_view_width"
+    android:layout_height="@dimen/contents_detail_player_channel_list_item_view_height"
+    android:background="@color/contents_player_background_color"
+    >
+
+<!--    <ImageView-->
+<!--        android:id="@+id/tv_player_channel_list_recyclerview_item_iv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="@dimen/contents_detail_player_channel_list_item_view_top_margin"-->
+<!--        android:layout_marginBottom="@dimen/contents_detail_player_channel_list_item_view_bottom_margin"-->
+<!--        android:layout_marginLeft="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"-->
+<!--        android:layout_marginRight="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:src="@mipmap/error_ch_mini"-->
+<!--        android:foreground="@mipmap/movie_material_landscape_ch_thumb_overlay_graduation"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:contentDescription="@null"-->
+<!--        android:visibility="gone"/>-->
+
+    <SurfaceView
+        android:id="@+id/tv_contents_recycler_view_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/contents_detail_player_channel_list_item_view_top_margin"
+        android:layout_marginBottom="@dimen/contents_detail_player_channel_list_item_view_bottom_margin"
+        android:layout_marginLeft="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"
+        android:layout_marginRight="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageView
+        android:id="@+id/tv_player_channel_list_recyclerview_item_iv_on_live_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/contents_detail_player_channel_list_item_view_top_margin"
+        android:layout_marginBottom="@dimen/contents_detail_player_channel_list_item_view_bottom_margin"
+        android:layout_marginLeft="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"
+        android:layout_marginRight="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/movie_material_landscape_ch_thumb_overlay_full_70_graduation"
+        android:alpha="0.7"
+        android:visibility="gone"
+        android:contentDescription="@null"/>
+
+    <LinearLayout
+        android:id="@+id/content_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/swipe_channel_list_top_content_layout_height"
+        android:layout_marginTop="@dimen/contents_detail_player_channel_list_item_view_top_margin"
+        android:layout_marginLeft="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"
+        android:layout_marginRight="@dimen/contents_detail_player_channel_list_item_view_left_right_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tv_player_fullscreen_channel_list_logo"
+            android:layout_width="@dimen/contents_detail_player_channel_list_item_logo_view_width"
+            android:layout_height="@dimen/contents_detail_player_channel_list_item_logo_view_height"
+            android:layout_marginTop="@dimen/swipe_channel_list_logo_margin"
+            android:layout_marginStart="@dimen/swipe_channel_list_logo_margin"
+            android:background="@color/contents_logo_background_default_color"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/tv_player_fullscreen_channel_list_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/swipe_channel_list_top_content_height"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/swipe_channel_list_title_top_margin"
+            android:layout_marginStart="@dimen/swipe_channel_list_title_left_margin"
+            android:layout_marginEnd="@dimen/swipe_channel_list_title_right_margin"
+            android:background="@color/contents_player_now_on_air_cur_text_backgroud_color"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textColor="@color/contents_player_landscape_title_text_color"
+            android:textSize="@dimen/contents_detail_player_channel_list_item_name_text_size"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_player_fullscreen_channel_list_animation"
+        android:layout_width="@dimen/swipe_channel_list_audio_bar_size"
+        android:layout_height="@dimen/swipe_channel_list_audio_bar_size"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:contentDescription="@null"/>
+
+</RelativeLayout>

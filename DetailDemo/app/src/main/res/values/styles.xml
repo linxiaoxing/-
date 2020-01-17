@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/header_background_color_red</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <!-- テーマにトランジションアニメを定義 -->
+        <item name="android:windowAnimationStyle">@style/GeneralAnimation</item>
+    </style>
+    <style name="AppThemeBlack" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/header_background_color_black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <!-- テーマにトランジションアニメを定義 -->
+        <item name="android:windowAnimationStyle">@style/GeneralAnimation</item>
+    </style>
+
+    <style name="AnimationRightFade">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+
+    <style name="default_layout_style">
+        <item name="android:background">#000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="autoscroll">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <!--Activity遷移時トランザクションをなくす -->
+    <style name="STBTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/header_background_color_red</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!--コンテンツ詳細-->
+    <style name="ContentsDetailTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/header_background_color_black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+	<!--TvPlayerActivity-->
+    <style name="DiximPlayerPanelTheme" parent="@android:style/Theme.Holo.Light.Panel" />
+
+    <!--Launch画面-->
+    <style name="CheckBox" parent="Theme.AppCompat.Light">
+        <!-- 枠線 -->
+        <item name="colorControlNormal">@color/white_text</item>
+        <!-- チェック時の色 -->
+        <item name="colorControlActivated">@color/white_text</item>
+    </style>
+
+    <!-- 標準アクティビティトランジション指定 -->
+    <style name="GeneralAnimation" parent="android:Animation.Activity">
+        <!-- 既存のグローバルメニュー表示アニメーションを流用 -->
+        <item name="android:activityOpenEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_lefttoright</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_lefttoright</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_righttoleft</item>
+    </style>
+</resources>

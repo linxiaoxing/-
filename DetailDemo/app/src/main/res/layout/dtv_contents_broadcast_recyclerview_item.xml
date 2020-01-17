@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 NTT DOCOMO, INC. All Rights Reserved.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recycler_view_item_linear_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_item_relative_layout"
+        android:background="@color/common_background_color">
+        <ImageView
+            android:id="@+id/dtv_contents_recycler_view_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+        <SurfaceView
+            android:id="@+id/dtv_contents_recycler_view_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/tv_player_channel_list_animation"
+            android:layout_width="@dimen/swipe_channel_list_audio_bar_size"
+            android:layout_height="@dimen/swipe_channel_list_audio_bar_size"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:contentDescription="@null"/>
+        <TextView
+            android:id="@+id/contract_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="@color/contents_contract_leading_text_color"
+            android:textSize="@dimen/contents_detail_contract_leading_text_size" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/dtv_contents_recycler_view_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contents_detail_broadcast_txt_size"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/contents_detail_broadcast_title_margin"
+        android:textColor="@color/basic_text_color_white"
+        android:maxLines="2"/>
+    <TextView
+        android:id="@+id/dtv_contents_recycler_view_channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contents_detail_broadcast_channel_margin_top"
+        android:textColor="@color/contents_detail_schedule_detail_schedule_info"
+        android:textSize="@dimen/contents_detail_broadcast_channel_txt_size"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginBottom="@dimen/contents_detail_broadcast_channel_margin_bottom"/>
+    <TextView
+        android:id="@+id/dtv_contents_recycler_view_new_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/contents_detail_schedule_detail_schedule_info"
+        android:textSize="@dimen/contents_detail_broadcast_channel_txt_size"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="gone" />
+</LinearLayout>

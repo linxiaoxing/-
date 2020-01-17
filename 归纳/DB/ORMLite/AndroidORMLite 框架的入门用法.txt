@@ -1,0 +1,11 @@
+Android ORMLite 框架的入门用法
+https://blog.csdn.net/lmj623565791/article/details/39121377
+
+Android中使用OrmLite（一）：表创建及增删改查
+https://blog.csdn.net/industriously/article/details/50756294
+
+Android中使用OrmLite（二）：复杂条件查询
+https://blog.csdn.net/industriously/article/details/50790624
+
+Android中使用OrmLite（三）：批处理
+https://blog.csdn.net/industriously/article/details/50792046

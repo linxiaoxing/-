@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 NTT DOCOMO, INC. All Rights Reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_player_main_layout_video_ctrl_player_video_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contents_player_background_color">
+
+    <ScrollView
+        android:id="@+id/channel_list_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contents_detail_player_channel_list_scroll_view_height">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/channel_list_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/contents_detail_player_channel_list_item_view_margin"
+            android:paddingRight="@dimen/contents_detail_player_channel_list_item_view_margin"
+            android:clipToPadding="false"
+            />
+
+    </ScrollView>
+
+</RelativeLayout>

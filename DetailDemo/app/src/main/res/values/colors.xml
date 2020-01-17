@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 NTT DOCOMO, INC. All Rights Reserved.
+  -->
+
+<resources>
+    <!-- Basic Color -->
+    <color name="basic_text_color_white">#ffffff</color>
+    <color name="basic_text_color_black">#000000</color>
+
+    <!--Common-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menuList">#000000</color>
+    <color name="menuListProgramTitle">#FFFFFF</color>
+    <color name="white_text">#FFFFFF</color>
+    <color name="black_text">#000000</color>
+    <color name="list_item_background">#000000</color>
+    <color name="content_time_text">#cccccc</color>
+    <color name="header_background_color_red">#cc0033</color>
+    <color name="header_background_color_black">#000000</color>
+    <color name="dtv_contents_detail_tab_background_color">#000000</color>
+    <color name="program_list_tab_background_color">#000000</color>
+    <color name="channel_list_tab_background_color">#1D1D1D</color>
+    <color name="common_tab_background_color">#222222</color>
+    <color name="common_tab_select_text_color">#999999</color>
+    <color name="common_tab_unselect_text_color">#FFFFFF</color>
+    <color name="common_tab_indicating_no_color">#666666</color>
+    <color name="common_tab_indicating_color">#FFFFFF</color>
+    <color name="common_background_color">#1d1d1d</color>
+
+    <!--スプラッシュ画面-->
+    <color name="launch_background_color_red">#cc0033</color>
+    <color name="launch_terms_service_layout_normal">#e8e8e8</color>
+    <color name="launch_terms_service_layout_pressed">#c3c3c3</color>
+    <color name="launch_terms_service_divider_one_background_color">#bfbfbf</color>
+    <color name="launch_terms_service_divider_two_background_color">#a0a0a0</color>
+    <!--Home画面-->
+    <color name="home_main_background_color">#1d1d1d</color>
+    <color name="home_no_contract_info_background_color">#ffffff</color>
+    <color name="home_no_contract_info_text_color">#0f0f0f</color>
+    <color name="home_contract_button_background_color">#fd0003</color>
+    <color name="home_contract_button_text_color">@color/basic_text_color_white</color>
+    <color name="home_item_name_text_color">@color/basic_text_color_white</color>
+    <color name="home_item_contents_num_text_color">#c9c9c9</color>
+    <color name="home_item_contents_text_color">@color/basic_text_color_white</color>
+    <color name="home_item_progress_back_color">#c0101010</color>
+    <!--Global Menu-->
+    <color name="global_menu_popup_window_background_color">#ffffff</color>
+    <color name="global_menu_transparent_text_color">#00000000</color>
+    <!-- キーワード検索 -->
+    <color name="keyword_search_background_color">#1d1d1d</color>
+    <color name="keyword_search_background_focus">#EEEEEE</color>
+    <color name="keyword_search_background_unfocus">#666666</color>
+    <color name="keyword_search_text_focus">#333333</color>
+    <color name="keyword_search_text_unfocus">#CCCCCC</color>
+    <color name="keyword_search_header_background">#000000</color>
+
+    <color name="recommend_list_now_on_air">#ffbb4e</color>
+    <!-- ランキング一覧 -->
+    <color name="ranking_list_border">#888888</color>
+    <!-- ランキング一覧 -->
+    <color name="recording_reservation_status_text_color_red">#FF0000</color>
+    <color name="recording_reservation_status_text_color_white">#FFFFFF</color>
+    <color name="recording_reservation_status_background_red">#FF0000</color>
+    <color name="recording_reservation_status_background_white">#FFFFFF</color>
+    <color name="recording_reservation_status_background_black">#000000</color>
+    <!-- ビデオ一覧 -->
+    <color name="video_list_text_color">@color/basic_text_color_white</color>
+    <color name="video_list_line">#424242</color>
+
+    <!--録画予約-->
+    <color name="record_reservation_list_root_bg">#000000</color>
+    <color name="record_reservation_list_reservation_status_text_background_color">#979797</color>
+    <color name="record_reservation_list_failed_status_background_color">#fd0003</color>
+
+    <!--コンテンツ詳細-->
+    <color name="contents_detail_thumbnail_background">#000000</color>
+    <color name="contents_detail_default_background_color">#333333</color>
+    <color name="contents_header_background">#000000</color>
+    <color name="contents_contract_leading_text_color">@color/basic_text_color_white</color>
+    <color name="contents_contract_leading_button_color">#eb3015</color>
+    <color name="contents_contract_leading_button_text_color">@color/basic_text_color_white</color>
+    <color name="contents_player_background_color">#00000000</color>
+    <color name="contents_player_now_on_air_color">#ff0000</color>
+    <color name="contents_player_now_on_air_text_color">@color/basic_text_color_white</color>
+    <color name="contents_player_now_on_air_cur_text_backgroud_color">#00000000</color>
+    <color name="contents_player_now_on_air_total_text_backgroud_color">#00000000</color>
+    <color name="contents_logo_background_default_color">#00000000</color>
+    <color name="contents_player_landscape_title_text_color">@color/basic_text_color_white</color>
+    <color name="contents_player_media_controller_time_text">#ffffff</color>
+    <color name="contents_detail_schedule_detail_sub_title">#ffffff</color>
+    <color name="contents_detail_schedule_detail_schedule_info">#cccccc</color>
+    <color name="contents_detail_video_miss_color">#ffbb4e</color>
+    <color name="contents_detail_line_color">#4a4a4a</color>
+    <!--録画番組一覧-->
+    <color name="recorded_background">#000000</color>
+    <color name="recorded_contents_background">#222222</color>
+    <color name="record_download_status_color">#ffbb4e</color>
+
+    <!--//STB選択-->
+    <drawable name="color_white">#ffffff</drawable>
+    <drawable name="color_black">#000000</drawable>
+    <drawable name="color_gray">#4a4a4a</drawable>
+    <color name ="stb_select_black_color">@color/basic_text_color_black</color>
+    <color name ="stb_select_white_color">#ffffff</color>
+    <color name="stb_select_background_color">#1d1d1d</color>
+
+    <!--//STB初期設定扉-->
+    <color name ="stb_launch_white_color">@color/basic_text_color_white</color>
+    <color name ="stb_launch_black_color">@color/basic_text_color_black</color>
+
+    <!--//ペアリング設定（wifi接続状態）-->
+    <color name ="stb_wifi_set_white_color">@color/basic_text_color_white</color>
+    <color name ="stb_wifi_set_comment_color">#CCCCCC</color>
+    <color name ="stb_wifi_set_black_color">@color/basic_text_color_black</color>
+    <color name ="stb_wifi_set_wifi_state_color">#FFBB4E</color>
+
+    <!--//リモート視聴設定-->
+    <color name ="stb_remote_set_white_color">@color/basic_text_color_white</color>
+    <color name ="stb_remote_set_comment_color">#CCCCCC</color>
+    <color name ="stb_remote_set_black_color">@color/basic_text_color_black</color>
+
+    <!--//リモート視聴設定確認-->
+    <color name ="stb_remote_introduce_white_color">@color/basic_text_color_white</color>
+    <color name ="stb_remote_introduce_comment_color">#CCCCCC</color>
+    <color name ="stb_remote_introduce_black_color">@color/basic_text_color_black</color>
+
+    <!--//リモコン画面-->
+    <drawable name="color_little_gray">#E5E5E5</drawable>
+    <color name="remote_watch_by_tv_bottom_corners_dtv">#D3052C</color>
+    <color name="remote_watch_by_tv_bottom_corners_d_anime">#DD5e30</color>
+    <color name="remote_watch_by_tv_bottom_corners_dazn">#FFFFFF</color>
+    <color name="remote_watch_by_tv_bottom_corners_dtvchannel_and_hikari">#00A2E6</color>
+    <color name="remote_controller_background">#F5F5F5</color>
+    <color name="remote_watch_by_tv_bottom_dazn_text">#0C161C</color>
+    <color name="remote_watch_by_status_for_home_out_text">#979797</color>
+    <color name="remote_watch_default_highlight_text">#D9D9D9</color>>
+    <color name="remote_watch_dazn_highlight_text">#999999</color>>
+    <!--//チャンネルリスト-->
+    <color name="list_view_divider">#333333</color>
+
+    <!--//設定画面-->
+    <color name="setting_list_background_color">#1d1d1d</color>
+    <color name="setting_list_divider_color">#333333</color>
+    <color name="setting_background_color_black">#000000</color>
+
+    <!--//ペアリング設定画面-->
+    <color name="paring_setting_list_divider_color">#333333</color>
+    <color name="paring_setting_help_text_color">#cc0033</color>
+    <color name="paring_setting_terminal_to_pair_text_color">#cccccc</color>
+
+    <!--//マイ番組表設定-->
+    <color name="item_num_black">#1d1d1d</color>
+    <color name="my_channel_edit_main_root_bg">#1d1d1d</color>
+
+    <!--//縮小番組表-->
+    <color name="tv_program_list_time_line_now">#fd0003</color>
+    <color name="tv_program_list_root_view_bg">#000000</color>
+    <color name="tv_program_list_cur_time_btn_bg">#222222</color>
+    <color name="tv_program_list_ch_bg">#1d1d1d</color>
+    <color name="tv_program_list_ch_tab_bg">#000000</color>
+    <color name="program_missed_gray">#121212</color>
+	<color name="program_playing_gray">#404040</color>
+    <color name="program_start_gray">#121212</color>
+    <color name="tv_program_list_ch_title_text_color">#FFFFFF</color>
+    <color name="tv_program_list_panel_start_time_text_color">#FFFFFF</color>
+    <color name="tv_program_list_content_text_color">#FFFFFF</color>
+    <color name="tv_program_list_content_detail_text_color">#FFFFFF</color>
+    <color name="tv_program_item_bg">#000000</color>
+    <color name="tv_program_item_panel_bg">#222222</color>
+    <color name="tv_program_miss_vod">#999999</color>
+
+    <!--//アプリケーション情報-->
+    <color name="application_info_application_title">#808080</color>
+    <color name="application_info_application_title_value">#ffffff</color>
+    <color name="application_info_background_color">#1d1d1d</color>
+
+    <!--//スワイプ専用-->
+    <color name="tv_player_video_content_detail_bg">#000000</color>
+    <color name="swipe_chanel_date_text_color">#CCCCCC</color>
+</resources>

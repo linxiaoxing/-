@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/global_menu_list_height">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/global_menu_list_height"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="@color/menuListProgramTitle" />
+
+    <ImageView
+        android:id="@+id/tv_title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/notice_news_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/label_new_menu"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="@dimen/global_menu_list_right_arrow_icon_size"
+        android:layout_height="@dimen/global_menu_list_right_arrow_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/global_menu_list_item_count_right_margin"
+        android:textColor="@color/menuListProgramTitle"
+        android:textSize="13dp"
+        android:layout_toStartOf="@id/iv_arrow" />
+
+    <View
+        android:id="@+id/menu_item_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/setting_list_divider_color" />
+
+</RelativeLayout>

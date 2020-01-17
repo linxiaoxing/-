@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.detaildemo.view.CustomDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseCustomDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/base_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 実際にビューがaddされる親ビュー -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/base_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/header_background_color_red">
+            <!-- ヘッダー -->
+            <include
+                android:id="@+id/base_title"
+                layout="@layout/header_layout" />
+            <!-- コンテンツビューが配置される場所 -->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/base_motion_detection_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:id="@+id/base_remote_controller_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible">
+
+            <include
+                android:id="@+id/base_remote_controller"
+                layout="@layout/remote_control_main_layout" />
+        </RelativeLayout>
+
+        <!-- プログレスバー -->
+        <RelativeLayout
+            android:id="@+id/base_progress_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/base_progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/global_menu_list_width"
+        android:layout_height="match_parent"
+        android:background="@color/menuList"
+        android:layout_gravity = "end">
+
+        <LinearLayout
+            android:id="@+id/account_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/global_menu_list_height"
+            android:background="@color/header_background_color_red">
+
+            <ImageView
+                android:id="@+id/account_status_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/global_menu_list_item_default_title_left_margin"
+                android:src="@mipmap/icon_normal_account"/>
+
+            <TextView
+                android:id="@+id/account_status_text"
+                android:layout_width="@dimen/global_menu_account_status_text_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@id/account_status_image"
+                android:layout_marginStart="@dimen/global_menu_account_status_text_left_margin"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/global_menu_account_status_text_size"
+                android:textColor="@color/menuListProgramTitle"/>
+
+            <ImageView
+                android:id="@+id/account_status_icon_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_normal_close"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/menu_list"
+            android:layout_below="@id/account_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </RelativeLayout>
+</com.example.detaildemo.view.CustomDrawerLayout >

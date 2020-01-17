@@ -1,0 +1,844 @@
+<resources>
+    <string name="app_name">DetailDemo</string>
+
+
+    <!-- Common -->
+    <string name="contents_hyphen">-</string>
+    <string name="positive_response">はい</string>
+    <string name="negative_response">いいえ</string>
+    <string name="custom_dialog_ok">OK</string>
+    <string name="custom_dialog_cancel">キャンセル</string>
+    <string name="clip_regist_result_message">クリップしました</string>
+    <string name="clip_regist_error_message">クリップに失敗しました</string>
+    <string name="clip_delete_result_message">クリップを解除しました</string>
+    <string name="clip_delete_error_message">クリップの解除に失敗しました</string>
+    <string name="message_three_asterisk">＊＊＊</string>
+    <string name="parental_pg_12">PG12</string>
+    <string name="parental_r_15">R15</string>
+    <string name="parental_r_18">R18</string>
+    <string name="parental_r_20">R20</string>
+    <string name="common_text_close">閉じる</string>
+    <string name="common_text_retry">リトライ</string>
+    <string name="save_token">トークンの保存を行います。</string>
+    <string name="transoceanic_communication_dialog_confirm">利用する</string>
+    <string name="transoceanic_communication_dialog_content">海外でのパケット通信は、日本国内とは異なる料金体系となりますのでご注意ください。 \n※通信料はご契約の通信会社提供のプランにより異なります。\n※Wi-Fi接続でご利用される場合はこの限りではありません。</string>
+    <string name="transoceanic_communication_dialog_title">海外での通信利用</string>
+    <string name="permission_denied_dialog_title">Permission Denied</string>
+    <string name="permission_denied_dialog_content">通信許可がないためアプリケーションを終了します</string>
+    <string name="permission_detail_dialog_title">SIM情報の取得確認</string>
+    <string name="permission_detail_dialog_content">ドコモテレビターミナルアプリは、海外での通信利用確認のためSIM情報を取得します。\n次の画面で「許可」を選択してください。\n※「許可しない」を選択した場合、海外利用時に海外通信を利用する旨の通知がされません。</string>
+    <string name="permission_detail_dialog_confirm">OK</string>
+    <string name="status_bar_height_name">status_bar_height</string>
+    <string name="status_bar_height_deftype">dimen</string>
+    <string name="status_bar_height_defpackage">android</string>
+    <string name="common_empty_data_message">コンテンツがありません</string>
+    <string name="content_detail_empty_data_message">コンテンツ情報が取得できないか、設定された年齢でご視聴いただけないコンテンツです</string>
+    <string name="common_failed_data_message">データの取得に失敗しました</string>
+    <string name="common_get_data_failed_message">取得に失敗しました</string>
+    <string name="common_failed_get_info">情報の取得に失敗しました</string>
+    <string name="common_root_device_detection_message">Rootデバイスを検知したためアプリを終了します</string>
+    <string name="common_until">まで</string>
+    <string name="common_date_format_start_str">" から"</string>
+    <string name="common_date_format_end_str">" まで"</string>
+    <string name="common_text_regist_progress_done">設定を完了しました</string>
+    <string name="common_text_regist_over_error_setting">リモート視聴可能な台数が上限に達しました。\nドコモテレビターミナルでペアリングを解除してください。\n解除方法はFAQをご覧ください。(LR-%s)</string>
+    <string name="common_text_regist_no_h4d_contract_error">ひかりＴＶ for docomoの契約状態が確認できないため\nご利用になれません(LR-%s)</string>
+    <string name="common_text_regist_other_error">ひかりＴＶ for docomoの設定が「自宅内/外出先で有効」になっていない可能性があります。設定をご確認ください。(LR-%s)</string>
+    <string name="common_start_dtv_application_uninstall_error">ドコモテレビターミナルにdTVアプリがインストールされていないため、起動に失敗しました</string>
+    <string name="common_start_d_animation_application_uninstall_error">ドコモテレビターミナルにdアニメストアアプリがインストールされていないため、起動に失敗しました</string>
+    <string name="common_start_dtv_channel__application_uninstall_error">ドコモテレビターミナルにdTVチャンネルアプリがインストールされていないため、起動に失敗しました</string>
+    <string name="common_start_hikari_application_uninstall_error">ドコモテレビターミナルにひかりＴＶ for docomoアプリがインストールされていないため、起動に失敗しました</string>
+    <string name="common_start_dazn_application_uninstall_error">ドコモテレビターミナルにDAZN for docomoアプリがインストールされていないため、起動に失敗しました</string>
+    <string name="common_request_acceptance_failure_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-11）</string>
+    <string name="common_different_user_switch_successfully_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-12）</string>
+    <string name="common_service_unregistered_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-13）</string>
+    <string name="common_user_time_out_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-14）</string>
+    <string name="common_user_cancel_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-15）</string>
+    <string name="common_user_state_abnormality_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-16）</string>
+    <string name="common_switch_user_account_network_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-17）</string>
+    <string name="common_switch_user_account_server_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-18）</string>
+    <string name="common_switch_user_account_internal_error">ドコモテレビターミナルのアプリの起動に失敗しました（A-19）</string>
+    <string name="common_ott_channel">モバイル専用</string>
+    <string name="common_my_channel">マイ番組表</string>
+    <string name="common_professional_channel">専門ch</string>
+    <string name="common_dtv_channel">dTVチャンネル</string>
+    <string name="common_dtb_channel">地デジ</string>
+    <string name="common_bs_channel">BS</string>
+    <string name="common_bs4k_channel">BS4K</string>
+    <string name="common_contents_front_bracket">" ("</string>
+    <string name="common_contents_end_bracket">") "</string>
+    <string name="common_contents_min">分</string>
+
+
+    <!-- Launch -->
+    <string name="str_app_title">ドコモテレビターミナル</string>
+    <string name="str_launch_title">起動画面</string>
+    <string name="str_stb_next_not_display_text">以後、表示しない</string>
+    <string name="str_stb_connect_success_text">ドコモテレビターミナルと接続しました。</string>
+    <string name="str_stb_no_pair_use_text">ペアリングをしないで利用する</string>
+    <string name="str_stb_to_set_later_text">あとで設定する</string>
+    <string name="str_stb_no_login_use_text">ログインしないで利用する</string>
+    <string name="str_stb_paring_cancel_text">ペアリングを解除する</string>
+    <string name="str_stb_paring_setting_title">ペアリング設定</string>
+    <string name="str_d_account_setting_help_title">ドコテレ画像</string>
+    <string name="str_d_account_app_not_install">dアカウント設定アプリがインストールされておりません。\n本アプリのご利用には、dアカウント設定アプリが必要です。</string>
+    <string name="str_d_account_app_download">dアカウント設定アプリをダウンロードする</string>
+    <string name="str_stb_select_result_text">接続可能なドコモテレビターミナルが見つかりました。\n接続したいドコモテレビターミナルを選択してください。</string>
+    <string name="str_stb_select_result_text_failed">接続可能なドコモテレビターミナルが見つかりませんでした。</string>
+    <string name="str_stb_select_power_and_wifi_check">ドコモテレビターミナルの電源がONになっていることを確認の上、本スマートフォン・タブレットを同じネットワークにWi-Fi接続してください。</string>
+    <string name="str_stb_select_result_text_search">接続可能なドコモテレビターミナルを探しています。</string>
+    <string name="str_stb_not_registration_account_message">本スマートフォン・タブレットとドコモテレビターミナルのdアカウントが一致しません。\n同一のdアカウントを本スマートフォン・タブレットとドコモテレビターミナルに設定してください。</string>
+    <string name="str_stb_login_other_account">本スマートフォン・タブレットの\ndアカウントを変更する</string>
+    <string name="str_stb_d_account_registration_help">ドコモテレビターミナルに\ndアカウントを設定する</string>
+    <string name="str_stb_again_pairing">再度、ドコモテレビターミナルとつなげる</string>
+    <string name="launch_initial_setting_door_string">ドコモテレビターミナルと連携したテレビ操作などの機能を利用するには接続設定(ペアリング)\nを行う必要があります。</string>
+    <string name="launch_initial_setting_door_paring_string">接続設定を行う</string>
+    <string name="launch_stb_select_latency_text">30秒ほどかかる場合があります。</string>
+    <string name="str_stb_select_network_set_help">ネットワーク設定のヘルプ</string>
+    <string name="str_stb_select_wifi_not_connect">本スマートフォン・タブレットがWi-Fiに接続されていません。\nWi-Fiに接続後に再度お試しください。</string>
+
+    <string name="str_stb_pairing">ドコモテレビターミナルと接続中です。</string>
+    <string name="str_launch_stb_communication_failed_error">ドコモテレビターミナルとの通信に失敗しました（A-10）</string>
+    <string name="str_stb_registration_device_name_os">Android</string>
+    <string name="str_stb_registration_device_name_regist">登録</string>
+
+
+    <string name="str_launch_agree_to_terms_text_tile">利用規約</string>
+    <string name="str_launch_agree_to_terms_text_view">ドコモテレビターミナルアプリのご利用にあたっては、アプリケーション・プライバシーポリシーと
+        ドコモテレビターミナルアプリ利用規約をご確認の上、ご利用を開始してください。</string>
+    <string name="str_launch_application_privacy_title">アプリケーション・プライバシーポリシー</string>
+    <string name="str_launch_application_privacy_text">お客様がこのアプリケーションを利用されるにあたり、携帯電話内の次の情報を外部送信します。</string>
+    <string name="str_launch_externally_transmit_title">外部送信する情報</string>
+    <string name="str_launch_externally_transmit_text">①携帯電話の識別番号\n②お客様のアプリケーションご利用状況\n③お客様の年齢\n④お客様のコンテンツご利用状況
+        \n⑤株式会社NTTぷららサーバ用サービストークン
+        \n⑥ペアリング済ドコモテレビターミナルのMACアドレス下4桁および識別情報UUID</string>
+    <string name="str_launch_purpose_of_use_title">利用目的</string>
+    <string name="str_launch_purpose_of_use_text">①本サービス提供の際のお客様識別及び、著作権保護管理のため\n②本アプリケーションの不具合修正、
+        および本サービスのUI/UX改善・機能向上、新たなサービス検討のため\n③年齢に合わせたコンテンツ出し分けのため\n④クリップ機能等、
+        本サービスの利便性向上のため\n⑤ひかりＴＶ for docomoの契約情報を取得するため\n⑥宅外からドコモテレビターミナルを通してコンテンツを視聴するため</string>
+    <string name="str_launch_third_party_offerings_title">第三者提供等の有無</string>
+    <string name="str_launch_third_party_offerings_text">当社は、本アプリケーションの不具合修正、および本サービスのUI/UX改善・機能向上のため、新たなサービス検討のためにお客様のアプリケーションご利用状況をGoogle LLCおよびその完全子会社に送信します。</string>
+    <string name="str_launch_agree_to_terms_start_use_button">規約に同意して利用を開始</string>
+    <string name="str_launch_application_privacy_all_text">より詳細なアプリケーション・プライバシーポリシー全文は、全体版にてご確認いただけます。</string>
+    <string name="str_launch_docomo_terminal_terms_of_service_title">ドコモテレビターミナルアプリ利用規約</string>
+    <string name="str_launch_confirm_to_start_use_text">ドコモテレビターミナルアプリのご利用にあたっては、ドコモテレビターミナルアプリ利用規約について\nご確認、ご同意いただいた上、ご利用を開始してください。</string>
+    <string name="str_launch_confirm_application_terms_of_service_link">ドコモテレビターミナルアプリ利用規約を確認する</string>
+
+    <!-- リモコン-->
+    <string name="remote_controller_viewpager_watch_by_tv">テレビで視聴する</string>
+    <string name="remote_controller_viewpager_text_use_remote">リモコンを表示する</string>
+    <string name="remote_controller_viewpager_text_status_home_in">宅内利用中</string>
+    <string name="remote_controller_viewpager_text_status_home_out">宅外利用中</string>
+    <string name="remote_controller_viewpager_text_status_none_paring">未ペアリング</string>
+    <string name="remote_controller_stb_viewing_ng_toast">本コンテンツはテレビで視聴できません</string>
+
+    <!-- Home -->
+    <string name="recommend_list_title">おすすめ番組・ビデオ</string>
+    <string name="home_now_on_air_program_list">番組表</string>
+    <string-array name="recommend_list_tab_names">
+        <item>テレビ</item>
+        <item>ビデオ</item>
+        <item>dTV</item>
+        <item>dTVチャンネル</item>
+        <item>dアニメストア</item>
+        <item>DAZN</item>
+    </string-array>
+    <string name="recording_reservation_list_title">録画予約</string>
+    <string name="recording_reservation_status_accepting">受付中</string>
+    <string name="recording_reservation_status_accept_failure">受付失敗</string>
+    <string name="recording_reservation_list_update_time">現在</string>
+    <string name="activity_start_network_error_message">ネットワークに接続できませんでした。\nネットワーク状態を確認してください。</string>
+    <string name="get_user_info_error_message">ひかりＴＶ for docomoの契約情報取得に失敗しました</string>
+    <string name="get_contents_data_error_message">情報の取得に失敗したため、一部のコンテンツのみ表示します。\nしばらく経ってから再度お試しください。</string>
+    <string name="home_no_paring_info_text">ドコモテレビターミナルとの接続設定が完了していません。</string>
+    <string name="home_no_login_info_text">dアカウントでログインしてください</string>
+    <string name="home_contract_button_text">接続する</string>
+    <string name="home_contents_pipe">" | "</string>
+    <string name="home_contents_hyphen">" - "</string>
+    <string name="home_contents_colon">:</string>
+    <string name="home_contents_slash">/</string>
+    <string name="home_contents_front_bracket">（</string>
+    <string name="home_contents_back_bracket">）</string>
+    <string name="home_label_recommend_program">おすすめ番組</string>
+    <string name="home_label_recommend_video">おすすめビデオ</string>
+    <string name="home_label_now_on_air">NOW ON AIR</string>
+    <string name="home_label_now_on_air_mobile">NOW ON AIR - モバイル専用</string>
+    <string name="home_login_button">ログイン</string>
+
+    <!-- クリップ一覧 -->
+    <string name="str_clip_activity_title">クリップ</string>
+    <string name="str_clip_list_no_content">クリップしたコンテンツがありません</string>
+    <string name="str_clip_execution_after_limit_contents">配信が終了しているためクリップできません</string>
+    <string name="str_clip_subtitle_delivery_end">配信終了</string>
+    <string-array name="tab_clip_names">
+        <item>番組</item>
+        <item>ビデオ</item>
+    </string-array>
+
+    <!-- チャンネルリスト AreaCodeが取得できた時且つ3号機ではない-->
+    <string-array name="channel_list_tab_names_area_code">
+        <item>モバイル専用</item>
+        <item>専門ch</item>
+        <item>地デジ</item>
+        <item>BS</item>
+        <item>dTVチャンネル</item>
+    </string-array>
+
+    <!-- チャンネルリスト AreaCodeが取得できた時且つ3号機-->
+    <string-array name="channel_list_tab_names_area_code_bs4k">
+        <item>モバイル専用</item>
+        <item>専門ch</item>
+        <item>地デジ</item>
+        <item>BS</item>
+        <item>BS4K</item>
+        <item>dTVチャンネル</item>
+    </string-array>
+
+    <!-- チャンネルリスト AreaCodeが取得できなかった時 -->
+    <string-array name="channel_list_tab_names_no_area_code">
+        <item>モバイル専用</item>
+        <item>専門ch</item>
+        <item>BS</item>
+        <item>dTVチャンネル</item>
+    </string-array>
+
+    <!-- チャンネルリスト AreaCodeが取得できなかった時且つ3号機 -->
+    <string-array name="channel_list_tab_names_no_area_code_bs4k">
+        <item>モバイル専用</item>
+        <item>専門ch</item>
+        <item>BS</item>
+        <item>BS4K</item>
+        <item>dTVチャンネル</item>
+    </string-array>
+
+
+    <!-- WatchingVideoActivity -->
+    <string name="str_watching_video_activity_title">視聴中ビデオ</string>
+
+    <!-- TvProgram -->
+    <string-array name="tv_program_list_no_login_tab_names">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_no_contract_tt02_tab_names">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_bs4k_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_no_area_code_tab_names">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_my_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_no_area_code_tab_names_paring">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_my_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_bs4k_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_area_code_tab_names">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_dtb_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_area_code_tt02_tab_names">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_dtb_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_bs4k_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_all_tab_names">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_my_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_dtb_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string-array name="tv_program_list_all_tab_names_paring">
+        <item>@string/common_ott_channel</item>
+        <item>@string/common_my_channel</item>
+        <item>@string/common_professional_channel</item>
+        <item>@string/common_dtb_channel</item>
+        <item>@string/common_bs_channel</item>
+        <item>@string/common_bs4k_channel</item>
+        <item>@string/common_dtv_channel</item>
+    </string-array>
+    <string name="tv_program_tip">マイ番組が設定されていません</string>
+
+    <!-- 録画番組 -->
+    <string-array name="record_list_tab_names">
+        <item>すべて</item>
+        <item>ダウンロード済み</item>
+    </string-array>
+    <string name="record_list_loading_message">読み込みに30秒ほどかかる場合があります</string>
+    <string name="record_download_percent_mark">%</string>
+    <string name="record_download_error_message">ダウンロードに失敗しました(DL-%s)</string>
+    <string name="record_download_delete_title">削除しますか？</string>
+    <string name="record_download_cancel_title">ダウンロードを取りやめますか？</string>
+    <string name="record_download_cancel_confirm">取りやめる</string>
+    <string name="record_download_notification">録画番組をダウンロード中&#8230;</string>
+    <string name="record_download_notification_channel_name">ダウンロード状況</string>
+    <string name="record_download_not_completed_msg">録画コンテンツのダウンロードに失敗しました。\n再度録画一覧よりダウンロードを行ってください。(DL-%s)</string>
+    <string name="record_download_low_storage_space_msg">端末の容量が不足しているため、ダウンロードできません。\n端末の設定を確認して容量を確保の上もう一度お試しください。(DL-%s)</string>
+    <string name="activation_failed_error_player">再生に失敗しました。\nしばらくしてからもう一度お試しください。(AC-%s)</string>
+    <string name="activation_failed_error_local_registration">リモート視聴設定に失敗しました。\nしばらくしてからもう一度お試しください。(AC-%s)</string>
+    <string name="activation_failed_error_download">ダウンロードに失敗しました。\nしばらくしてからもう一度お試しください。(AC-%s)</string>
+
+    <!-- ビデオ一覧 -->
+    <string name="video_content_top_title">ビデオジャンル</string>
+    <string name="video_list_genre_all">すべて</string>
+    <string name="video_list_genre_all_contents">すべて</string>
+    <string name="video_list_genre_nod">NHKオンデマンド</string>
+    <string name="video_list_genre_dtv">dTV</string>
+
+    <!-- Search -->
+    <string name="keyword_search_title">キーワードで探す</string>
+    <string name="keyword_search_hint">検索するキーワードを入力</string>
+    <string name="keyword_search_default_count">検索結果:0件</string>
+    <string name="keyword_search_result">検索結果:</string>
+    <string name="keyword_search_result_num">件</string>
+    <string name="keyword_search_result_no">の</string>
+    <string-array name="tab_names">
+        <item>テレビ</item>
+        <item>ビデオ</item>
+        <item>dTV</item>
+        <item>dTVチャンネル</item>
+        <item>dアニメストア</item>
+        <item>DAZN</item>
+    </string-array>
+
+    <!-- Ranking -->
+    <string name="daily_tv_ranking_title">今日の番組ランキング</string>
+    <string name="weekly_tv_ranking_title">週間番組ランキング</string>
+    <string name="video_ranking_title">ビデオランキング</string>
+    <string name="common_ranking_enter">\n</string>
+    <string name="common_ranking_tab_all">総合</string>
+
+    <!-- Player -->
+    <string name="now_on_air">NOW ON AIR</string>
+
+    <!-- MenuDisplay -->
+    <string name="nav_menu_status_login_ng">未ログイン</string>
+    <string name="nav_menu_item_home">ホーム</string>
+    <string name="nav_menu_item_program_list">番組表</string>
+    <string name="nav_menu_item_channel_list">チャンネルリスト</string>
+    <string name="nav_menu_item_recorder_program">録画番組</string>
+    <string name="nav_menu_item_recommend_program_video">おすすめ番組・ビデオ</string>
+    <string name="nav_menu_item_staff_recommend">スタッフおすすめ</string>
+    <string name="nav_menu_item_ranking">ランキング</string>
+    <string name="nav_menu_item_clip">クリップ</string>
+    <string name="nav_menu_item_tv_clip">クリップ（番組）</string>
+    <string name="nav_menu_item_vod_clip">クリップ（ビデオ）</string>
+    <string name="nav_menu_item_purchased_video">購入済みビデオ</string>
+    <string name="nav_menu_item_watch_listen_video">視聴中ビデオ</string>
+    <string name="nav_menu_item_record_reserve">録画予約</string>
+    <string name="nav_menu_item_video">ビデオジャンル</string>
+    <string name="nav_menu_item_keyword_search">キーワードで探す</string>
+    <string name="nav_menu_item_notice">お知らせ</string>
+    <string name="nav_menu_item_setting">設定</string>
+    <string name="nav_menu_item_hikari_tv_none_action">ひかりＴＶ　</string>
+    <string name="nav_menu_item_hikari_tv">ひかりＴＶ</string>
+    <string name="nav_menu_item_dtv_channel">dTVチャンネル</string>
+    <string name="nav_menu_item_dtv">dTV</string>
+    <string name="nav_menu_item_d_animation">dアニメ</string>
+    <string name="nav_menu_item_dazn">ダ・ゾーン</string>
+    <string name="nav_menu_item_premium_video">プレミアムビデオ</string>
+    <string name="nav_menu_item_premium_tv_app_start_common">テレビアプリを起動する</string>
+    <string name="nav_menu_item_h4d_guide">ひかりＴＶ for docomoガイド</string>
+
+    <!-- 検索画面 -->
+    <string name="search_loading">読み込み中&#8230;</string>
+
+    <!-- レンタル -->
+    <string name="rental_title">レンタルビデオ</string>
+
+    <!--コンテンツ詳細-->
+    <string name="contents_info_more_text">more</string>
+    <string name="contents_info_thumbnail_text">コンテンツ詳細のサムネイル画像</string>
+    <string name="contents_info_thumbnail_button">コンテンツ詳細のサムネイル画像上のボタン</string>
+    <string name="contents_detail_tv_staff">キャスト・スタッフ</string>
+    <string name="contents_detail_tv_staff_recommend">おすすめ作品</string>
+    <string name="contents_detail_hikari_d_channel_miss_viewing">見逃し</string>
+    <string name="contents_detail_hikari_d_channel_miss_viewing_separation">"見逃し | "</string>
+    <string name="dtv_content_service_start_text">dTVで視聴</string>
+    <string name="dtv_content_service_start_dialog">dTVを起動します</string>
+    <string name="dtv_content_service_update_dialog">dTVアプリのアップデートが必要です</string>
+    <string name="dtv_content_service_application_not_install">dTVアプリがインストールされていません。\nインストールしますか？</string>
+    <string name="d_anime_store_content_service_start_text">dアニメストアで視聴</string>
+    <string name="d_anime_store_content_service_start_dialog">dアニメストアを起動します</string>
+    <string name="d_anime_store_content_service_update_dialog">dアニメストアアプリのアップデートが必要です</string>
+    <string name="d_anime_store_application_not_install_dialog">dアニメストアアプリがインストールされていません。\nインストールしますか？</string>
+    <string name="dazn_content_service_start_text">DAZNで視聴</string>
+    <string name="dazn_content_service_start_dialog">DAZNを起動します</string>
+    <string name="dazn_content_service_update_dialog">DAZNアプリのアップデートが必要です</string>
+    <string name="dazn_application_not_install_dialog">DAZNアプリがインストールされていません。\nインストールしますか？</string>
+    <string name="dtv_channel_service_start_text">dTVチャンネルで視聴</string>
+    <string name="dtv_channel_service_start_dialog">dTVチャンネルを起動します</string>
+    <string name="dtv_channel_service_update_dialog">dTVチャンネルアプリのアップデートが必要です</string>
+    <string name="dtv_channel_service_application_not_install_dialog">dTVチャンネルアプリがインストールされていません。\nインストールしますか？</string>
+    <string name="d_tv_terminal_application_version_update_dialog">ドコモテレビターミナルアプリのアップデートが必要です</string>
+    <string name="stb_application_version_update">ご利用のドコモテレビターミナルでアプリのアップデートが必要です。\nドコモテレビターミナルを起動し、設定＞ドコモサービス設定＞ドコモアプリ管理から「ドコモテレビターミナル中継アプリ」をアップデートしてください。</string>
+    <string name="contents_detail_thumbnail_text_no_pair">ドコモテレビターミナルに接続してください</string>
+    <string name="contents_detail_thumbnail_text">テレビで視聴できます</string>
+    <string name="contents_detail_thumbnail_text_unable_viewing">お使いの端末では視聴できません</string>
+    <string name="contents_detail_contract_leading_button">契約する</string>
+    <string name="contents_detail_tv_confirm_leading_button">テレビで確認する</string>
+    <string name="contents_detail_tab_program_detail">番組詳細</string>
+    <string name="contents_detail_tab_channel">チャンネル</string>
+    <string name="contents_detail_tab_episode">エピソード</string>
+    <string name="contents_detail_tab_contents_info">作品情報</string>
+    <string name="contents_detail_tab_broadcast_program">NOW ON AIR</string>
+    <string name="contents_detail_hikari_channel_agreement">ご覧になるにはチャンネルの契約が必要です。\nドコモテレビターミナルで契約してください。</string>
+    <string name="contents_detail_hikari_vod_agreement">本コンテンツ（有料）はテレビで視聴できます。\nコンテンツの契約状態はテレビでご確認ください。</string>
+    <string name="contents_detail_no_agreement">視聴いただくには契約が必要です</string>
+    <string name="contents_detail_bs_premium_ch">本チャンネル（有料）はテレビで視聴できます。\nチャンネルの契約状態はテレビでご確認ください。</string>
+    <string-array name="contents_detail_tab_other_service_vod">
+        <item>@string/contents_detail_tab_contents_info</item>
+    </string-array>
+    <string-array name="contents_detail_tab_other_service_tv">
+        <item>@string/contents_detail_tab_program_detail</item>
+    </string-array>
+    <string-array name="contents_detail_tabs_tv_ch">
+        <item>@string/contents_detail_tab_program_detail</item>
+        <item>@string/contents_detail_tab_channel</item>
+    </string-array>
+    <string-array name="contents_detail_tabs_tv_ch_broadcast">
+        <item>@string/contents_detail_tab_program_detail</item>
+        <item>@string/contents_detail_tab_channel</item>
+        <item>@string/contents_detail_tab_broadcast_program</item>
+    </string-array>
+
+    <string-array name="contents_detail_tabs_vod_episode">
+        <item>@string/contents_detail_tab_contents_info</item>
+        <item>@string/contents_detail_tab_episode</item>
+    </string-array>
+    <string name="recording_reservation_complete_dialog_msg">録画予約依頼を受け付けました</string>
+    <string name="recording_reservation_failed_dialog_msg">録画予約に失敗しました</string>
+    <string name="recording_reservation_failed_dialog_confirm">OK</string>
+    <string name="recording_reservation_failed_dialog_over">録画予約件数が上限に達したため録画予約に失敗しました</string>
+    <string name="recording_reservation_confirm_dialog_title">録画予約しますか？</string>
+    <string name="recording_reservation_confirm_dialog_msg">録画予約を行います。録画予約が受け付けられるまで、時間がかかる場合がありますのでご注意ください。</string>
+    <string name="recording_reservation_confirm_dialog_confirm">録画予約する</string>
+    <string name="recording_reservation_confirm_dialog_cancel">キャンセル</string>
+    <string name="contents_detail_contract_button_vod">ドコモテレビターミナルで購入する</string>
+    <string name="contents_detail_contract_text_ch">このチャンネルをご覧になるには\nドコモテレビターミナルでの契約が必要です</string>
+    <string name="contents_detail_contract_button_ch">ドコモテレビターミナルで契約する</string>
+    <string name="contents_detail_external_display_dialog_msg">外部出力が検出されたので、再生を停止しました(MP-%s)</string>
+    <string name="contents_detail_parental_check_fail">年齢制限のため視聴できません(MP-%s)</string>
+    <string name="contents_detail_response_ok">OK</string>
+    <string name="contents_detail_adinfo_array_pipe">"\\|"</string>
+    <string name="contents_detail_pairing_request">ドコモテレビターミナルとのペアリングが必要です</string>
+    <string name="contents_detail_contract_request">契約が必要です</string>
+    <string name="contents_detail_login_button">ログインする</string>
+    <string name="contents_detail_login_message">dアカウントでログインしてください\nログイン後は、ホーム画面に移動します</string>
+    <string name="contents_detail_now_on_air_contents_nothing">現在放送中のコンテンツがありません</string>
+    <string name="contents_detail_player_no_channel">お使いの環境では、このコンテンツは視聴できません</string>
+    <string name="contents_detail_player_bs4k_channel">BS4Kコンテンツは、本アプリでは視聴できません。\nテレビで視聴してください。</string>
+    <string name="contents_detail_pairing_button">ペアリングする</string>
+    <string name="contents_detail_secure_player_fail_message">再生ができませんでした。\nしばらくしてからもう一度お試しください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_setting_file_load_fail">再生ができませんでした。\nネットワークの状態を確認して再度お試しください。(P-%s)</string>
+    <string name="contents_detail_secure_player_fail_contents_not_find">再生ができませんでした。\nドコモテレビターミナルを「設定＞端末情報＞再起動」から再起動してもう一度お試しください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_contents_could_not_read">再生ができませんでした。\nアプリを再起動してもう一度お試しください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_encrypted_communication_set">再生ができませんでした。\n指定されたコンテンツを再生するには、WEP, WPA, WPA2のいずれかの暗号化通信方式を使用するよう無線LANルーターの設定を変更してください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_only_takeout_device">再生ができませんでした。\n持ち出しコンテンツは持ち出したデバイスでのみ再生できます。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_other_http_error">再生ができませんでした。\nネットワーク状態を確認してもう一度お試しください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_http_connection_error">再生ができませんでした。\nドコモテレビターミナルのネットワーク状態を確認してもう一度お試しください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_specified_content_invalid">再生ができませんでした。\n指定されたコンテンツはファイルが破損している可能性があります。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_specified_content_format_not_support">再生ができませんでした。\n対応されていないコンテンツ形式のため再生できません。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_remote_setting_one_more_time">再生ができませんでした。\n再度「リモート視聴設定」が必要です。\n「メニュー＞設定＞リモート視聴設定」からリモート視聴設定を行ってください。(MP-%s)</string>
+    <string name="contents_detail_secure_player_fail_http_error">再生ができませんでした。\nほかのユーザーが既に再生しているため、現在ご利用になれません。(MP-%s)</string>
+    <string name="contents_detail_episode_dialog_title">視聴しますか？</string>
+    <string name="contents_detail_episode_dialog_dtv_start">dTVで視聴する</string>
+    <string name="contents_detail_episode_dialog_d_anime_store_start">dアニメストアで視聴する</string>
+    <string name="contents_detail_episode_cannot_watch_toast">本コンテンツはテレビで視聴できません</string>
+    <string name="contents_detail_episode_detail_all_read">全文を読む</string>
+    <string name="contents_detail_episode_dialog_start_stb_dtv_error">テレビで視聴するにはドコモテレビターミナルとペアリングが必要です。</string>
+    <string name="contents_detail_episode_dialog_start_stb_dtv_toast">Wi-Fi接続を確認してください</string>
+    <string name="contents_detail_player_progress_message">再生が開始されるまでしばらくお待ちください\n最大60秒ほどかかる場合があります</string>
+    <string name="contents_detail_player_status_change_message">ネットワーク環境が変更されました。\nもう一度再生をお試しください。(MP-%s)</string>
+    <string name="contents_detail_ott_player_error_msg">再生できませんでした。\nもう一度お試しください。</string>
+    <string name="contents_detail_ott_player_error_common_msg">再生できませんでした</string>
+
+    <!-- チャンネルリストタイトル -->
+    <string name="channel_list_activity_title">チャンネルリスト</string>
+
+    <!-- ペアリング設定画面 -->
+    <string name="paring_setting_search_failed_text">ペアリング可能なドコモテレビターミナルが\n見つかりませんでした</string>
+    <string name="paring_setting_search_help_text">ドコモテレビターミナルとペアリングするには</string>
+    <string name="paring_setting_select_text">ペアリングするドコモテレビターミナルを選択</string>
+
+    <!-- 設定画面 -->
+    <string name="main_setting_d_account_message">dアカウント設定アプリがインストールされていません。\nインストールしますか？</string>
+    <string name="main_setting_pairing">ペアリング済み</string>
+    <string name="main_setting_not_paring">未ペアリング</string>
+    <string name="main_setting_image_quality_low">標準画質</string>
+    <string name="main_setting_image_quality_middle">高画質</string>
+    <string name="main_setting_image_quality_high">最高画質</string>
+    <string name="main_setting_quality_setting_header">外出先視聴時の画質設定</string>
+    <string name="main_setting_application_info_header">アプリケーション情報</string>
+    <string name="main_setting_quality_status">status</string>
+    <string name="main_setting_remote_paring_request">「ペアリング設定」からペアリングしてください</string>
+    <string name="main_setting_stb_application_launch_fail">ドコモテレビターミナルのアプリの起動に失敗しました</string>
+    <string name="main_setting_stb_application_launch_fail_id_notexist">本アプリでログインしているdアカウントのユーザーをドコモテレビターミナル（テレビ側）に登録してください</string>
+    <string name="main_setting_dtv_update_message">ドコモテレビターミナルのdTVアプリを最新バージョンにアップデートしてください</string>
+    <string name="main_setting_d_anime_store_update_message">ドコモテレビターミナルのdアニメストアアプリを最新バージョンにアップデートしてください</string>
+    <string name="main_setting_dtv_channel_update_message">ドコモテレビターミナルのdTVチャンネルアプリを最新バージョンにアップデートしてください</string>
+    <string name="main_setting_hikari_tv_update_message">ドコモテレビターミナルのひかりＴＶ for docomoアプリを最新バージョンにアップデートしてください</string>
+    <string name="main_setting_dazn_update_message">ドコモテレビターミナルのDAZN for docomoアプリを最新バージョンにアップデートしてください</string>
+    <string name="main_setting_connect_error_message">ドコモテレビターミナルとの通信に失敗しました</string>
+    <string name="main_setting_stb_busy_error_message">ドコモテレビターミナルが処理中です</string>
+    <string name="main_setting_logon_request_error_message">「dアカウント設定」からログインしてください</string>
+    <string name="main_setting_h4d_not_signed_message">ひかりＴＶ for docomoの契約状態が確認できないため\nご利用になれません</string>
+    <string name="main_setting_stb_not_connected_message">ドコモテレビターミナルが接続されているWi-Fiに接続した状態で再度実施してください</string>
+    <string name="main_setting_menu_title_faq_list">FAQ</string>
+    <string name="main_setting_paring_release_dialog_confirm_text">本アプリからのテレビ操作、ひかりＴＶ for docomoの放送番組の視聴や録画予約などの機能を利用できなくなります。</string>
+    <string name="main_setting_paring_release_text">解除する</string>
+    <string name="main_setting_paring_release_cancel_text">キャンセル</string>
+    <string name="main_setting_menu_title_license">ライセンス情報</string>
+    <string name="main_setting_menu_title_privacy_policy">プライバシーポリシー</string>
+    <string name="main_setting_menu_title_app">アプリケーション・プライバシーポリシー</string>
+    <string name="main_setting_menu_title_terms_of_service">利用規約</string>
+    <string-array name="main_setting_items">
+        <item>dアカウント設定</item>
+        <item>ペアリング設定</item>
+        <item>マイ番組表設定</item>
+        <item>リモート視聴設定</item>
+        <item>外出先視聴時の画質設定</item>
+        <item>FAQ</item>
+        <item>アプリケーション情報</item>
+        <item>ライセンス情報</item>
+        <item>プライバシーポリシー</item>
+        <item>アプリケーション・プライバシーポリシー</item>
+        <item>利用規約</item>
+    </string-array>
+
+    <!-- マイ番組表設定 -->
+    <string name="my_channel_list_setting">マイ番組表設定</string>
+    <string name="my_channel_list_setting_select_channel">チャンネルを選択</string>
+    <string name="my_channel_list_setting_failed_dialog_content_register">マイ番組表の登録に失敗しました</string>
+    <string name="my_channel_list_setting_failed_dialog_content_unregister">マイ番組表からの解除に失敗しました</string>
+    <string name="my_channel_list_setting_dialog_content_unregister">をマイ番組表から解除しますか？</string>
+
+    <!-- dアカウント登録 -->
+    <string name="d_account_regist_error">dアカウントの処理に失敗しました</string>
+    <string name="d_account_remote_exception_error">dアカウントの処理に失敗しました（A-1）</string>
+    <string name="d_account_service_unregistered_error">dアカウントの処理に失敗しました（A-2）</string>
+    <string name="d_account_authentication_invalid_error">dアカウントの処理に失敗しました（A-3）</string>
+    <string name="d_account_user_timeout_error">dアカウントの処理に失敗しました（A-4）</string>
+    <string name="d_account_user_interruption_error">dアカウントの処理に失敗しました（A-5）</string>
+    <string name="d_account_user_abnormality_error">dアカウントの処理に失敗しました（A-6）</string>
+    <string name="d_account_server_error">dアカウントの処理に失敗しました（A-7）</string>
+    <string name="d_account_network_error">dアカウントの処理に失敗しました（A-8）</string>
+    <string name="d_account_internal_error">dアカウントの処理に失敗しました（A-9）</string>
+    <string name="d_account_change_message">dアカウントが変更されたため、ホーム画面に戻ります</string>
+    <string name="d_account_deleted_message">dアカウントが変更されました</string>
+
+    <!-- お知らせ -->
+    <string name="information_title">お知らせ</string>
+
+    <!-- H4d契約情報取得 -->
+    <string name="h4d_agreement_change">契約状態が変更されたため、ホームに戻ります</string>
+
+    <!-- アプリケーション情報 -->
+    <string name="application_info_application_name">アプリケーション名</string>
+    <string name="application_info_application_name_value">ドコモテレビターミナルアプリ</string>
+    <string name="application_info_application_provider">提供者</string>
+    <string name="application_info_application_version">バージョン</string>
+    <string name="application_info_application_provider_value">株式会社NTTドコモ</string>
+
+    <!-- メッセージ自体は細分化せず、2種類に留める予定 -->
+    <string name="network_server_error_message">サーバとの接続に失敗しました</string>
+    <string name="network_token_error_message">ユーザ情報の取得に失敗しました</string>
+    <string name="network_nw_error_message">ネットワークに接続されていません。ネットワーク接続をご確認ください</string>
+    <string name="network_nw_error_message_dialog">ネットワークに接続できませんでした。\nネットワーク状態を確認してください。</string>
+    <string name="network_ssl_error_message">SSL通信に失敗しました</string>
+    <string name="network_http_error_message">サーバとの通信に失敗しました</string>
+    <string name="json_parse_error_message">取得に失敗しました</string>
+
+    <!-- エラープレフィックスタイプ一覧　※新たに定義されたら追加していく -->
+    <string name="error_prefix_type_plala_server_error">P-%s</string>
+    <string name="error_prefix_type_json_paser_error">A-%s</string>
+    <string name="error_prefix_type_search_recommend_error">K-%s</string>
+    <string name="error_prefix_type_d_account_error">AI-%s</string>
+    <string name="error_prefix_type_local_registration_error">LR-%s</string>
+    <string name="error_prefix_type_http_code_error">HC-%s</string>
+    <string name="error_prefix_type_download_error">DL-%s</string>
+    <string name="error_prefix_type_remote_connect_error">RM-%s</string>
+    <string name="error_prefix_type_connect_failed_ddtcp_error">RM-D-%s</string>
+    <string name="error_prefix_type_media_player_code_error">MP-%s</string>
+    <string name="error_prefix_activated_error">AC-%s</string>
+
+    <!--  設定ファイル動作制御用仮ワーディング -->
+    <string name="setting_file_force_download">ドコモテレビターミナルアプリの新バージョンがあります。アップデートを行います。</string>
+    <string name="setting_file_download">ドコモテレビターミナルアプリの新バージョンが存在します。アップデートを行いますか？</string>
+    <string name="setting_file_stop_apli">アプリの動作が行えませんでした</string>
+
+    <!-- チュートリアル -->
+    <string name="tutorial_show_agreement">規約を表示</string>
+    <string name="tutorial_agreement_button">規約に同意して利用を開始</string>
+
+    <item type="id" name="tag_key"> </item>
+
+    <!-- Google Analytics スクリーン名 -->
+    <string name="google_analytics_screen_name_splash">スプラッシュ</string>
+    <string name="google_analytics_screen_name_home">ホーム</string>
+    <string name="google_analytics_screen_name_player_h4d_broadcast_program_detail">プレイヤー_ひかりTVコンテンツ_放送_番組詳細</string>
+    <string name="google_analytics_screen_name_player_h4d_broadcast_channel">プレイヤー_ひかりTVコンテンツ_放送_チャンネル</string>
+    <string name="google_analytics_screen_name_player_recording">プレイヤー_録画</string>
+    <string name="google_analytics_screen_name_content_detail_h4d_broadcast_program_detail">コンテンツ詳細_ひかりTVコンテンツ_放送_番組詳細</string>
+    <string name="google_analytics_screen_name_content_detail_h4d_broadcast_channel">コンテンツ詳細_ひかりTVコンテンツ_放送_チャンネル</string>
+    <string name="google_analytics_screen_name_content_detail_h4d_vod_program_detail">コンテンツ詳細_ひかりTVコンテンツ_VOD_番組詳細</string>
+    <string name="google_analytics_screen_name_content_detail_h4d_vod_episode">コンテンツ詳細_ひかりTVコンテンツ_VOD_エピソード</string>
+    <string name="google_analytics_screen_name_content_detail_other_danime_episode">コンテンツ詳細_pure dアニメストア_エピソード</string>
+    <string name="google_analytics_screen_name_content_detail_other_dtv_episode">コンテンツ詳細_pure dTV_エピソード</string>
+    <string name="google_analytics_screen_name_content_detail_other_dtv">コンテンツ詳細_pure dTV</string>
+    <string name="google_analytics_screen_name_content_detail_other_dtv_ch">コンテンツ詳細_pure dTVチャンネル</string>
+    <string name="google_analytics_screen_name_content_detail_other_danime">コンテンツ詳細_pure dアニメストア</string>
+    <string name="google_analytics_screen_name_content_detail_other_dazn">コンテンツ詳細_pure DAZN</string>
+    <string name="google_analytics_screen_name_dtv_read_all">あらすじ</string>
+    <string name="google_analytics_screen_name_recording_list">録画一覧_すべて</string>
+    <string name="google_analytics_screen_name_recording_list_takeout">録画一覧_持ち出し</string>
+    <string name="google_analytics_screen_name_recording_reservation">録画予約</string>
+    <string name="google_analytics_screen_name_watching_video">視聴中ビデオ</string>
+    <string name="google_analytics_screen_name_bought_video">購入済みビデオ</string>
+    <string name="google_analytics_screen_name_rental">レンタル</string>
+    <string name="google_analytics_screen_name_premium_video">プレミアムビデオ</string>
+    <string name="google_analytics_screen_name_clip_tv">クリップ_テレビ</string>
+    <string name="google_analytics_screen_name_clip_video">クリップ_ビデオ</string>
+    <string name="google_analytics_screen_name_clip_key_word">クリップ_キーワード</string>
+    <string name="google_analytics_screen_name_program_list_mine">番組表_マイ番組表</string>
+    <string name="google_analytics_screen_name_program_list_h4d">番組表_専門ch</string>
+    <string name="google_analytics_screen_name_program_list_ttb_channel">番組表_地デジ</string>
+    <string name="google_analytics_screen_name_program_list_bs_channel">番組表_BS</string>
+    <string name="google_analytics_screen_name_program_list_bs_4k_channel">番組表_BS4K</string>
+    <string name="google_analytics_screen_name_program_list_dtv_channel">番組表_dTVチャンネル</string>
+    <string name="google_analytics_screen_name_channel_detail">チャンネル詳細</string>
+    <string name="google_analytics_screen_name_channel_edit_menu">番組表編集メニュー</string>
+    <string name="google_analytics_screen_name_channel_edit_menu_channel_select">番組表編集メニュー_チャンネル選択</string>
+    <string name="google_analytics_screen_name_channel_list_h4d">チャンネルリスト_専門ch</string>
+    <string name="google_analytics_screen_name_channel_list_ter">チャンネルリスト_地デジ</string>
+    <string name="google_analytics_screen_name_channel_list_bs">チャンネルリスト_BS</string>
+    <string name="google_analytics_screen_name_channel_list_bs_4k">チャンネルリスト_BS4K</string>
+    <string name="google_analytics_screen_name_channel_list_dtv">チャンネルリスト_dTVチャンネル</string>
+    <string name="google_analytics_screen_name_channel_detail_watching_only">チャンネル詳細（視聴のみ）・宅内/宅外</string>
+    <string name="google_analytics_screen_name_video_top">ビデオ＞トップ</string>
+    <string name="google_analytics_screen_name_video_sub_genre">ビデオ＞サブジャンル</string>
+    <string name="google_analytics_screen_name_video_content_list">ビデオ＞コンテンツ一覧</string>
+    <string name="google_analytics_screen_name_search">キーワード検索</string>
+    <string name="google_analytics_screen_name_search_result_tv">キーワード検索結果_テレビ</string>
+    <string name="google_analytics_screen_name_search_result_video">キーワード検索結果_ビデオ</string>
+    <string name="google_analytics_screen_name_search_result_dtv_channel">キーワード検索結果_dTVチャンネル</string>
+    <string name="google_analytics_screen_name_search_result_dazn">キーワード検索結果_DAZN</string>
+    <string name="google_analytics_screen_name_search_result_dtv">キーワード検索結果_dTV</string>
+    <string name="google_analytics_screen_name_search_result_danime">キーワード検索結果_dアニメストア</string>
+    <string name="google_analytics_screen_name_ranking">ランキング</string>
+    <string name="google_analytics_screen_name_daily_ranking">今日のテレビランキング</string>
+    <string name="google_analytics_screen_name_weekly_ranking">週間テレビランキング</string>
+    <string name="google_analytics_screen_name_video_ranking">ビデオランキング</string>
+    <string name="google_analytics_screen_name_recommend">おすすめ番組・ビデオ</string>
+    <string name="google_analytics_screen_name_remote_control">リモコンエミュレート</string>
+    <string name="google_analytics_screen_name_news">お知らせ一覧</string>
+    <string name="google_analytics_screen_name_recommend_tv">おすすめ番組・ビデオ_テレビ</string>
+    <string name="google_analytics_screen_name_recommend_video">おすすめ番組・ビデオ_ビデオ</string>
+    <string name="google_analytics_screen_name_recommend_dtv">おすすめ番組・ビデオ_dTV</string>
+    <string name="google_analytics_screen_name_recommend_dtv_channel">おすすめ番組・ビデオ_dTVチャンネル</string>
+    <string name="google_analytics_screen_name_recommend_danime">おすすめ番組・ビデオ_dアニメストア</string>
+    <string name="google_analytics_screen_name_recommend_dazn">おすすめ番組・ビデオ_DAZN</string>
+    <string name="google_analytics_screen_name_setting">設定</string>
+    <string name="google_analytics_screen_name_setting_paring">設定＞ペアリング設定</string>
+    <string name="google_analytics_screen_name_setting_paring_completed">設定＞ペアリング設定＞ペアリング完了</string>
+    <string name="google_analytics_screen_name_setting_download">設定＞ダウンロード先設定</string>
+    <string name="google_analytics_screen_name_setting_faq">設定＞FAQ</string>
+    <string name="google_analytics_screen_name_setting_license">設定＞ライセンス情報</string>
+    <string name="google_analytics_screen_name_setting_privacy_policy">設定＞プライバシーポリシー</string>
+    <string name="google_analytics_screen_name_setting_terms">設定＞利用規約</string>
+    <string name="google_analytics_screen_name_setting_application_privacy_policy">設定＞アプリケーション・プライバシーポリシー</string>
+    <string name="google_analytics_screen_name_setting_application_info">設定＞アプリケーション情報</string>
+    <string name="google_analytics_screen_name_tutorial">チュートリアル</string>
+    <string name="google_analytics_screen_name_stb_select">STB選択</string>
+    <string name="google_analytics_screen_name_stb_connect">STB接続</string>
+    <string name="google_analytics_screen_name_stb_paring_help">STBペアリングヘルプ</string>
+    <string name="google_analytics_screen_name_paring_invitation">ペアリング勧誘</string>
+    <string name="google_analytics_screen_name_daccount_invitation">dアカウントアプリ誘導</string>
+    <string name="google_analytics_screen_name_daccount_resetting">dアカウント再設定</string>
+    <string name="google_analytics_screen_name_daccount_login_help">dアカウント登録ヘルプ</string>
+    <string name="google_analytics_screen_name_stb_paring_help_first_time">STBペアリングヘルプ_初回起動時</string>
+    <string name="google_analytics_screen_name_paring_completed">ペアリング完了</string>
+    <string name="google_analytics_screen_name_stb_select_loading">STBローディング</string>
+    <string name="google_analytics_screen_name_agreement">初回起動時に表示する規約画面</string>
+    <string name="google_analytics_screen_name_contract">契約ページ</string>
+    <string name="google_analytics_screen_name_remote_confirm">リモート視聴設定確認</string>
+    <string name="google_analytics_screen_name_remote_set">リモート視聴設定</string>
+    <string name="google_analytics_screen_name_paring_wifi_cut">ペアリングWiFi切断エラー</string>
+    <string name="google_analytics_screen_name_paring_wifi_connection">ペアリング前WiFi接続</string>
+    <string name="google_analytics_screen_name_paring_wifi_disconnected">ペアリング前WiFi未接続</string>
+    <string name="google_analytics_screen_name_paring_description">ペアリング前説明</string>
+    <string name="google_analytics_screen_name_unpaired_stb_select">未ペアリングSTB選択</string>
+    <string name="google_analytics_screen_name_unpaired_stb_detection_error">未ペアリングSTB検出エラー</string>
+    <string name="google_analytics_screen_name_stb_not_detected">STB未検出エラー</string>
+
+    <!-- Google Analytics イベントカテゴリ -->
+    <string name="google_analytics_category_service_name_h4d">ひかりTV for docomo</string>
+    <string name="google_analytics_category_service_name_dtv">dTV</string>
+    <string name="google_analytics_category_service_name_dtv_ch">dTVチャンネル</string>
+    <string name="google_analytics_category_service_name_danime">dアニメ</string>
+    <string name="google_analytics_category_service_name_dazn">DAZN</string>
+    <string name="google_analytics_category_remote_control">リモコンエミュレート</string>
+    <string name="google_analytics_category_contract">契約状態変更</string>
+    <string name="google_analytics_category_transparent_from_paring_description">ペアリング前説明からの遷移</string>
+    <string name="google_analytics_category_remote_viewing_settings">リモート視聴設定</string>
+    <string name="google_analytics_category_event_error_report">アラートエラー</string>
+
+    <!-- Google Analytics イベントアクション -->
+    <string name="google_analytics_category_action_watch_tv">テレビで視聴するをタップ</string>
+    <string name="google_analytics_category_action_h4d">ひかりTV for docomoをタップ</string>
+    <string name="google_analytics_category_action_dtv">dTVをタップ</string>
+    <string name="google_analytics_category_action_dtv_ch">dTVチャンネルをタップ</string>
+    <string name="google_analytics_category_action_danime">dアニメをタップ</string>
+    <string name="google_analytics_category_action_dazn">DAZNをタップ</string>
+    <string name="google_analytics_category_action_sp_dtv">dTVで視聴するをタップ</string>
+    <string name="google_analytics_category_action_sp_dtv_ch">dTVチャンネルで視聴するをタップ</string>
+    <string name="google_analytics_category_action_sp_danime">dアニメで視聴するをタップ</string>
+    <string name="google_analytics_category_action_sp_dazn">DAZNで視聴するをタップ</string>
+    <string name="google_analytics_category_action_contents_play">コンテンツ再生</string>
+    <string name="google_analytics_category_action_record_contents_play">録画コンテンツ再生</string>
+    <string name="google_analytics_category_action_recording_reservation">録画予約</string>
+    <string name="google_analytics_category_action_clip_regist">登録</string>
+    <string name="google_analytics_category_action_clip_delete">解除</string>
+    <string name="google_analytics_category_action_remote_control_power">電源タップ</string>
+    <string name="google_analytics_category_action_remote_contract_get_success">契約状態取得完了</string>
+    <string name="google_analytics_category_action_paring_connection_set">接続設定（ペアリング）を行う</string>
+    <string name="google_analytics_category_action_set_later">あとで設定する</string>
+    <string name="google_analytics_category_action_no_display_next_time">次回以降表示しない</string>
+    <string name="google_analytics_category_action_action_remote_activation_error">リモート視聴設定アクティベートエラー</string>
+    <string name="google_analytics_category_action_remote_success">リモート視聴設定成功</string>
+    <string name="google_analytics_category_action_remote_device_over_error">リモート視聴設定台数超過エラー</string>
+    <string name="google_analytics_category_action_remote_no_h4d_contract_error">リモート視聴設定未契約エラー</string>
+    <string name="google_analytics_category_action_remote_other_error">リモート視聴設定その他エラー</string>
+
+    <!-- Google Analytics カスタムディメンション名 契約種別 -->
+    <string name="google_analytics_custom_dimension_hikari_contract_ing">ひかりTV契約中</string>
+    <string name="google_analytics_custom_dimension_hikari_no_contract_dch_contract_ok">ひかりTV契約無しdTVチャンネル契約あり</string>
+    <string name="google_analytics_custom_dimension_hikari_no_contract_dch_no_contract">ひかりTV・dTVチャンネル契約無し</string>
+
+    <!-- Google Analytics カスタムディメンション名 ペアリング -->
+    <string name="google_analytics_custom_dimension_pairing_ok">ペアリング済み</string>
+    <string name="google_analytics_custom_dimension_no_pairing">未ペアリング</string>
+
+    <!-- Google Analytics カスタムディメンション名 ログイン -->
+    <string name="google_analytics_custom_dimension_login_ng">未</string>
+    <string name="google_analytics_custom_dimension_login_ok">済み</string>
+
+    <!-- Google Analytics カスタムディメンション サービス-->
+    <string name="google_analytics_custom_dimension_service_h4d">ひかりTV for docomo</string>
+    <string name="google_analytics_custom_dimension_service_dtv">dTV</string>
+    <string name="google_analytics_custom_dimension_service_dtv_ch">dTVチャンネル</string>
+    <string name="google_analytics_custom_dimension_service_danime">dアニメストア</string>
+    <string name="google_analytics_custom_dimension_service_dazn">DAZN for docomo</string>
+
+    <!-- Google Analytics カスタムディメンション コンテンツ種別1-->
+    <string name="google_analytics_custom_dimension_contents_type1_h4d">ひかりTV for docomo</string>
+    <string name="google_analytics_custom_dimension_contents_type1_hikari_dtv_ch">ひかりTV内dTVチャンネル</string>
+    <string name="google_analytics_custom_dimension_contents_type1_hikari_dtv">ひかりTV内dTV</string>
+    <string name="google_analytics_custom_dimension_contents_type1_pure_dtv_ch">pure dTVチャンネル</string>
+    <string name="google_analytics_custom_dimension_contents_type1_pure_dtv">pure dTV</string>
+    <string name="google_analytics_custom_dimension_contents_type1_pure_danime">pure dアニメストア</string>
+    <string name="google_analytics_custom_dimension_contents_type1_pure_dazn">pure DAZN</string>
+
+    <!-- Google Analytics カスタムディメンション コンテンツ種別2-->
+    <string name="google_analytics_custom_dimension_contents_type2_live">放送</string>
+    <string name="google_analytics_custom_dimension_contents_type2_void">VOD</string>
+    <string name="google_analytics_custom_dimension_contents_type2_record">録画</string>
+
+    <!-- 視聴デバイス-->
+    <string name="google_analytics_custom_dimension_device_tv">TV視聴</string>
+    <string name="google_analytics_custom_dimension_device_sp">SP視聴</string>
+
+    <!-- Google Analytics カスタムディメンション 遷移元画面-->
+    <string name="google_analytics_custom_dimension_from_content_detail">コンテンツ詳細</string>
+    <string name="google_analytics_custom_dimension_form_home">設定（未ペアリング）</string>
+    <string name="google_analytics_custom_dimension_from_setting">ホーム</string>
+    <string name="google_analytics_custom_dimension_from_launch">アプリ起動時</string>
+
+    <!-- Google Analytics カスタムディメンション リモート視聴設定-->
+    <string name="google_analytics_custom_dimension_remote_configured">リモート視聴設定済み</string>
+    <string name="google_analytics_custom_dimension_remote_not_set">リモート視聴未設定</string>
+
+    <!-- リモート視聴設定（期限表示） -->
+    <string name="remote_remaining_days_message_begin">リモート視聴の有効期限が残り</string>
+    <string name="remote_remaining_days_message_end">日となっています。\nドコモテレビターミナルが接続されているWi-Fiに接続した状態で「メニュー＞設定＞リモート視聴設定」を行ってください。</string>
+    <string name="remote_remaining_zero_day_message">リモート視聴の有効期限が本日までとなっています。\nドコモテレビターミナルが接続されているWi-Fiに接続した状態で「メニュー＞設定＞リモート視聴設定」を行ってください。</string>
+    <string name="remote_expired_message">リモート視聴の有効期限が切れました。\n再度リモート視聴をする場合は、ドコモテレビターミナルが接続されているWi-Fiに接続した状態で「メニュー＞設定＞リモート視聴設定」を行ってください。</string>
+
+    <!-- ログアウト -->
+    <string name="logout_message">ログアウトしますか</string>
+
+    <!-- STB初期設定扉 -->
+    <string name="launch_stb_tv_title">ドコモテレビターミナルと連携したテレビ操作などの機能を利用するには接続設定（ペアリング）を行う必要があります。</string>
+    <string name="launch_stb_tv_comment">以下をご確認の上、設定を開始してください。\n・ドコモテレビターミナルと同じネットワークにWi-Fi接続されている。\n・ドコモテレビターミナルに本スマートフォン・タブレットと同じdアカウントが登録されている。</string>
+    <string name="launch_stb_bt_txt">接続設定（ペアリング）を行う</string>
+    <string name="launch_stb_bottom_txt">接続しないで利用する</string>
+    <string name="launch_stb_select_dialog_title">本アプリからのテレビ操作、ひかりＴＶ for docomoの放送番組の視聴や録画予約などの機能を利用するにはドコモテレビターミナルとの接続設定（ペアリング）を行ってください。\nあとで設定する場合は、ホーム画面上部の「接続設定」および「設定＞ペアリング設定」から行えます。</string>
+    <string name="launch_stb_select_dialog_txt1">あとで設定する</string>
+    <string name="launch_stb_select_dialog_txt2">次回以降ペアリング設定を表示しない</string>
+    <string name="launch_stb_select_dialog_txt3">キャンセル</string>
+    <string-array name="launch_stb_select_tabs">
+        <item>@string/launch_stb_select_dialog_txt1</item>
+        <item>@string/launch_stb_select_dialog_txt2</item>
+        <item>@string/launch_stb_select_dialog_txt3</item>
+    </string-array>
+
+    <!-- ペアリング設定（wifi接続状態確認） -->
+    <string name="stb_wifi_set_header">ペアリング設定</string>
+    <string name="stb_wifi_set_title_wifi_on">本スマートフォン・タブレットがドコモテレビターミナルと同じネットワークにWi-Fi接続されているか確認してください。</string>
+    <string name="stb_wifi_set_title_wifi_off">本スマートフォン・タブレットがWi-Fi接続されていません。\nドコモテレビターミナルと同じネットワークにWi-Fi接続してください。</string>
+    <string name="stb_wifi_set_comment">※ドコモテレビターミナルは有線接続でも問題ありません。</string>
+    <string name="stb_wifi_set_next_btn_txt">次へ</string>
+    <string name="stb_wifi_set_network_help_link_txt">ネットワーク設定のヘルプ</string>
+    <string name="stb_wifi_set_link_txt">あとで設定する</string>
+    <string name="stb_wifi_set_wifi_on_txt">Wi-Fi接続中</string>
+    <string name="stb_wifi_set_wifi_off_txt">Wi-Fi未接続</string>
+    <string name="stb_wifi_set_wifi_state_hyphen_txt">" - "</string>
+
+    <!-- リモート視聴確認 -->
+    <string name="remote_set_title">ひかりＴＶ for docomoをご利用の方で、外出先で放送番組を視聴するには設定が必要です。</string>
+    <string name="remote_set_bt_txt">設定をする</string>
+    <string name="remote_set_bottom_txt">今は利用しない</string>
+
+    <!-- リモート視聴設定 -->
+    <string name="remote_introduce_header">リモート視聴設定</string>
+    <string name="remote_introduce_title">ドコモテレビターミナルのひかりＴＶ for docomoアプリを起動して、以下の設定を行ってください。</string>
+    <string name="remote_introduce_comment">※本スマートフォン・タブレットのユーザー（dアカウント）で起動してください。</string>
+    <string name="remote_introduce_header_title1">１．「設定・お知らせ」で「ホームサーバ設定」を選択</string>
+    <string name="remote_introduce_header_title2">２．「ホームサーバ設定」で「ホームサーバ機能設定」を選択</string>
+    <string name="remote_introduce_header_title3">３．「ホームサーバ機能設定」で「自宅内/外出先で有効」を選択</string>
+    <string name="remote_introduce_bt_txt">設定を行った</string>
+    <string name="remote_introduce_bottom_txt">あとで設定する</string>
+    <string name="remote_introduce_dialog_txt">あとで設定する場合は、「設定＞リモート視聴設定」より行ってください。</string>
+
+    <!-- リモート接続エラー -->
+    <string name="remote_connect_error_timeout">リモート接続がタイムアウトしました。\nしばらくしてからもう一度お試しください。(RM-%s)</string>
+    <string name="remote_connect_error_network_failed">リモート接続に失敗しました。\nネットワーク状態を確認してもう一度お試しください。(RM-%s)</string>
+    <string name="remote_connect_error_service_unavailable">リモート接続に失敗しました。\n現在、サービスを停止しているためリモート接続ができません。\nお知らせをご確認の上しばらくしてからもう一度お試しください。(RM-%s)</string>
+    <string name="remote_connect_error_connect_failed">リモート接続に失敗しました(RM-%s)</string>
+    <string name="remote_connect_error_connect_failed_ddtcp">リモート接続に失敗しました。\nしばらくしてからもう一度お試しください。(RM-D-%s)</string>
+    <string name="remote_connect_error_connect_failed_dirag">リモート接続に失敗しました。\nしばらくしてからもう一度お試しください。(RM-%s)</string>
+    <string name="remote_connect_error_already_connected">リモート接続に失敗しました。\nほかのユーザーが既にリモート接続をしているため、現在ご利用になれません。(RM-%s)</string>
+    <string name="remote_connect_error_local_registration_unset">視聴いただくには、「リモート視聴設定」が必要です。\n「メニュー＞設定＞リモート視聴設定」からリモート視聴設定を行ってください。(RM-%s)</string>
+    <string name="remote_connect_error_local_registration_expired">リモート視聴設定の期限が切れたため、現在ご利用になれません。\n再度、「メニュー＞設定＞リモート視聴設定」からリモート視聴設定を行ってください。(RM-%s)</string>
+    <string name="remote_connect_error_stb_power_off">リモート接続に失敗しました。\nドコモテレビターミナルの電源が入っていないため、現在ご利用になれません。\nドコモテレビターミナルの電源を入れ、しばらくしてからもう一度お試しください。(RM-%s)</string>
+
+</resources>

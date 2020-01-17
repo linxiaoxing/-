@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name='AppUpdate'
+include ':update-app'
+include ':update-app-kotlin'
